@@ -34,27 +34,29 @@ const Order = () => {
       <div className="product container">
         <div className="product-body">
           {cart.map((cartItem) => (
-            <div className="card" key={cartItem._id}>
-              <img
-                src={cartItem.img}
-                alt="Avatar"
-                style={{ width: "100%", heigth: "100%" }}
-              />
-              <div className="container">
-                <h4>
-                  <b>{cartItem.name}</b>
-                </h4>
-                <p>{cartItem.price}</p>
-                <p>This Item Number: {cartItem.quantity}</p>
+            <React.Fragment key={cartItem._id}>
+              <div className="card">
+                <img
+                  src={cartItem.img}
+                  alt="Avatar"
+                  style={{ width: "100%", heigth: "100%" }}
+                />
+                <div className="container">
+                  <h4>
+                    <b>{cartItem.name}</b>
+                  </h4>
+                  <p>{cartItem.price}</p>
+                  <p>This Item Number: {cartItem.quantity}</p>
+                </div>
+                <button
+                  className="product-body-footer"
+                  onClick={() => handleRemove(cartItem)}
+                >
+                  Remove To Cart{" "}
+                  <FontAwesomeIcon className="icon" icon={faTrash} />
+                </button>
               </div>
-              <button
-                className="product-body-footer"
-                onClick={() => handleRemove(cartItem)}
-              >
-                Remove To Cart{" "}
-                <FontAwesomeIcon className="icon" icon={faTrash} />
-              </button>
-            </div>
+            </React.Fragment>
           ))}
         </div>
         <div className="product-sidebar">

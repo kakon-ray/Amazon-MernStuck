@@ -9,7 +9,7 @@ const useCart = () => {
   // localstroge data display show
   useEffect(() => {
     const storedCart = getLocalStorageId();
-    console.log(storedCart);
+
     const savedCart = [];
     const keys = Object.keys(storedCart);
 
@@ -22,7 +22,6 @@ const useCart = () => {
     })
       .then((res) => res.json())
       .then((products) => {
-        console.log(products);
         for (let dataItem in storedCart) {
           const cartProduct = products.find((item) => item._id === dataItem);
 

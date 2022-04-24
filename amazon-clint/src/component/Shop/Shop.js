@@ -64,16 +64,18 @@ const Shop = () => {
         <div className="product-body">
           {products.map((item) => {
             return (
-              <ShopCard
-                key={item._id}
-                img={item.img}
-                name={item.name}
-                category={item.category}
-                seller={item.seller}
-                price={item.price}
-                item={item}
-                addToCart={addToCart}
-              />
+              <React.Fragment key={item._id}>
+                <ShopCard
+                  key={item._id}
+                  img={item.img}
+                  name={item.name}
+                  category={item.category}
+                  seller={item.seller}
+                  price={item.price}
+                  item={item}
+                  addToCart={addToCart}
+                />
+              </React.Fragment>
             );
           })}
         </div>
