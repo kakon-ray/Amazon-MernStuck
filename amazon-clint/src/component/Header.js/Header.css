@@ -1,0 +1,44 @@
+.nav {
+  background-color: #1c2b35;
+  color: rgb(184, 186, 187);
+  /* position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; */
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.logo {
+  text-decoration: none;
+  color: aliceblue;
+  margin-right: auto;
+}
+
+.flex ul {
+  list-style: none;
+}
+
+.manu {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.flex ul li {
+  margin-left: 60px;
+}
+
+.flex ul li:hover {
+  color: rgb(255, 255, 255);
+}

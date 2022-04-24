@@ -1,0 +1,40 @@
+.cart-siderbar-design {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.Order {
+  text-align: center;
+  color: rgb(230, 139, 3);
+}
+
+.order-body {
+  padding-left: 10px;
+}
+.clear-cart {
+  background-color: red;
+  border: none;
+  padding: 10px 20px;
+  color: rgba(240, 248, 255, 0.863);
+  width: 100%;
+  border-radius: 4px;
+}
+.clear-cart:hover {
+  background-color: rgb(184, 14, 14);
+}
+
+.remove-order {
+  background-color: rgb(189, 162, 10);
+  border: none;
+  padding: 10px 20px;
+  color: rgba(240, 248, 255, 0.692);
+  width: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.remove-order:hover {
+  background-color: rgb(148, 128, 14);
+}
